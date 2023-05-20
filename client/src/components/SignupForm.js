@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
-
+// apollo stuff?
 import { createUser } from '../utils/API';
 import Auth from '../utils/auth';
+
+
 
 const SignupForm = () => {
   // set initial form state
@@ -15,6 +17,7 @@ const SignupForm = () => {
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setUserFormData({ ...userFormData, [name]: value });
+    //mutation?
   };
 
   const handleFormSubmit = async (event) => {
@@ -26,9 +29,10 @@ const SignupForm = () => {
       event.preventDefault();
       event.stopPropagation();
     }
-
-    try {
+    try { //this may not work after changes
       const response = await createUser(userFormData);
+
+      //this might be wrong and or become easier to define what went wrong after changes are made?
 
       if (!response.ok) {
         throw new Error('something went wrong!');

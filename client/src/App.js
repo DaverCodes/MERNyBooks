@@ -3,6 +3,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
 import Navbar from './components/Navbar';
+// import Apollo stuff
+//get graphql stuff
+
+//get and authorize token info
+
+// show user info to user
 
 function App() {
   return (
