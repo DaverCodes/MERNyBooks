@@ -1,6 +1,7 @@
 const { gql } = require('apollo-server-express');
 
 //HAVENT CHANGED
+//refer to notes
 
 const typeDefs = gql`
   type Tech {

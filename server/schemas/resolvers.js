@@ -1,6 +1,7 @@
 const { Book, User } = require('../models');
 
 //THIS MAY BE COMPLETELY WRONG
+//refer to notes
 
 const resolvers = {
   Query: {
